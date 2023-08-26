@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" />
+    </header>
+    <main>
+      <div class="card1">
+        <form action="">
+          <div class="bill">
+            <label for="bill">Bill</label>
+            <div class="billinput">
+              <input type="text" id="bill" placeholder="0" />
+              <img src="./images/icon-dollar.svg" alt="" />
+            </div>
+          </div>
+          <div class="tip">
+            <label for="tip">Select Tip %</label>
+            <div class="buttons">
+              <fieldset id="stated">
+                <input type="radio" value="5" name="tip" />
+                <input type="radio" value="10" name="tip" />
+                <input type="radio" value="15" name="tip" />
+                <input type="radio" value="25" name="tip" />
+                <input type="radio" value="50" name="tip" />
+              </fieldset>
+              <input id="custom" type="text" placeholder="Custom" />
+            </div>
+          </div>
+          <div class="people">
+            <div class="labelerror">
+              <label for="people">Number of People</label>
+              <p id="errormsg" class="hide">Can't be zero</p>
+            </div>
+            <div class="peopleinput">
+              <input type="text" id="people" placeholder="0" />
+              <img src="./images/icon-person.svg" alt="" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="card2">
+        <div class="tipamount">
+          <div class="tipamountlabel">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="flex">
+            <span class="dols">$</span><span id="tipamountvalue">0.00</span>
+          </div>
+        </div>
+        <div class="totalperson">
+          <div class="totalpersonlabel">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="flex">
+            <span class="dols">$</span><span id="totalpersonvalue">0.00</span>
+          </div>
+        </div>
+        <button type="reset" id="reset" disabled>RESET</button>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jonathan-Hart Peter T.</a>.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
